@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name='description' content='Photos from selected Mars Rover on a random day'>
     <title>SIGHTS FROM MARS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <style>
     body {
 	    background: #000000;
@@ -70,16 +71,16 @@
 <body>
     <h1>SIGHTS FROM MARS</h1>
     <p>Choose a rover to see photos from a random day.</p>
-    <div id='buttons'>
+    <div id='buttons' class = 'animated fadeInUp'>
         <button id='c' class='button'>CURIOSITY</button>
         <button id='o' class='button'>OPPORTUNITY</button>
         <button id='s' class='button'>SPIRIT</button>
     </div>
-
-    <h2 id="roverdate">
+    
+    <h2 id="roverdate" class = 'animated fadeIn'>
     </h2>  
 
-    <div id="content">    
+    <div id="content" class = 'animated fadeIn'>    
     </div>
     
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

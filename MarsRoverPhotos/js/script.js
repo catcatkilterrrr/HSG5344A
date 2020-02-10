@@ -34,10 +34,10 @@ $(document).ready(function(){
 
 function dispJSONData(api_call) {
 	$.getJSON(api_call, function(data){
-	
 		let photoDisp = document.getElementById('content');
 		let dateDisp = document.getElementById('roverdate');
-
+		
+		$("#content").hide();
 		// get JSON data
 		let marsPhotos = data.photos;
 		
@@ -80,20 +80,26 @@ function dispJSONData(api_call) {
 			} else {
 			camList.push(imgSrcURL[i][1]);
 			let marsPic = document.createElement("IMG");
+			marsPic.classList.add('animated', 'fadeIn');
 			let newFigCap = document.createElement("FIGCAPTION");
+			newFigCap.classList.add('animated', 'fadeIn');
 			marsPic.src = imgSrcURL[i][0];
 			newFigCap.innerHTML = `${imgSrcURL[i][1]} | PHOTO ID ${imgSrcURL[i][2]}`;
+
 			photoDisp.appendChild(marsPic);
 			photoDisp.appendChild(newFigCap);
 			}
 		}
+
+		let img = document.querySelector("img");
+		img.addEventListener("load", showPage);	
 	});
 }
 
 function getURL(rover) {
 	sol = Math.floor(Math.random()*1000);
-//	console.log(rover+" "+sol)
 	const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?sol=${sol}&page=1&api_key=`+key;
+	
 	return url
 }
 
@@ -119,4 +125,8 @@ function highlight(button_id) {
 function notClicked(button_id){
 	$(button_id).css('border-width', '1px');
 	$(button_id).css('opacity', '0.6');	
+}
+
+function showPage() {
+	$("#content").show();
 }
