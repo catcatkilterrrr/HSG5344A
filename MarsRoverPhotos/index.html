@@ -5,81 +5,18 @@
     <meta name='description' content='Photos from selected Mars Rover on a random day'>
     <title>SIGHTS FROM MARS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <style>
-    body {
-	    background: #000000;
-	    color: #FFFFFF;
-        font-family: Helvetica, sans-serif;
-        height: 2000px;
-        text-align: center;
-    }
-    h1 {
-        font-weight: bold;
-        letter-spacing: 7px;
-        font-size: 48px;
-        padding: 30px;
-    }
-
-    p {
-        font-weight: lighter;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    figcaption {
-        padding-bottom: 60px;
-        padding-top: 15px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 12px;
-    }
-
-    h2 {
-        font-weight: normal;
-        font-size: 28px;
-        letter-spacing: 3px;
-    }
-    
-    #content {
-        padding: 20px 20px;
-    }
-
-    #buttons {
-        padding: 20px 20px;
-    }
-
-    .button {
-        margin: 20px;
-        font-size: 20pt;
-        background-color: #000000;
-        color: #ffffff;
-        letter-spacing: 5px;
-        border:#FFFFFF;
-        border-width: 1px;
-        border-style: solid;
-        padding: 20px;
-        transition-timing-function: ease-in;
-        transition: background-color 0.33s;
-    }
-
-    img {
-        filter: drop-shadow(0 0 2px white);
-    }
-
-    </style>
+    <link rel="stylesheet" href="css/styles.css">   
 </head>  
 <body>
     <h1>SIGHTS FROM MARS</h1>
     <p>Choose a rover to see photos from a random day.</p>
     <div id='buttons' class = 'animated fadeInUp'>
-        <button id='c' class='button'>CURIOSITY</button>
-        <button id='o' class='button'>OPPORTUNITY</button>
-        <button id='s' class='button'>SPIRIT</button>
-    </div>
-    
+        <button id='c'>CURIOSITY</button>
+        <button id='o'>OPPORTUNITY</button>
+        <button id='s'>SPIRIT</button>
+    </div>   
     <h2 id="roverdate" class = 'animated fadeIn'>
     </h2>  
-
     <div id="content" class = 'animated fadeIn'>    
     </div>
     

@@ -1,0 +1,23 @@
+$buttonIds: c, o, s;
+@each $id in $buttonIds{
+    ##{$id}{
+        font-weight: lighter;
+    }
+}
+
+#buttons {
+    padding: 20px 20px;
+    button {
+        margin: 20px;
+        font-size: 20pt;
+        background-color: $bg;
+        color: $fg;
+        letter-spacing: 5px;
+        border:$fg;
+        border-width: 1px;
+        border-style: solid;
+        padding: 20px;
+        transition-timing-function: ease-in;
+        transition: background-color 0.33s;
+    }
+}

@@ -8,7 +8,7 @@ $(document).ready(function(){
 //	let headers = new Headers();
 //	headers.set('x-api-key', key);
 
-	$('.button').hover(function() {
+	$('button').hover(function() {
 		$(this).css('background-color', '#666666');
 	},
 	function(){

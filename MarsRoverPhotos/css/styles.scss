@@ -1,0 +1,43 @@
+@import 'global.scss';
+@import 'buttons.scss';
+
+body {
+    background: $bg;
+    color: $fg;
+    font-family: Helvetica, sans-serif;
+    height: 2000px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-size: 48px;
+    padding: 30px;
+}
+
+p {
+    font-weight: lighter;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+#content {
+    padding: 20px 20px;
+    img {
+        filter: drop-shadow(0 0 2px white);
+    }
+    figcaption {
+        padding-bottom: 60px;
+        padding-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}
